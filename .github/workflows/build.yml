@@ -1,0 +1,21 @@
+name: Flutter Build
+
+on:
+  push:
+    branches:
+      - master  # Adjust branch name as needed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '2.5.3'  # Adjust Flutter version as needed
+
+      - name: Build APK
+        run: flutter build apk
