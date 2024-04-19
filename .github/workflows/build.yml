@@ -18,4 +18,5 @@ jobs:
           flutter-version: '2.5.3'  # Adjust Flutter version as needed
 
       - name: Build APK
-        run: flutter build apk -t lib/Mds.dart
+        working-directory: example  # Specify the working directory
+        run: flutter build apk -t lib/main.dart  # Adjust the path to your Dart file if necessary
