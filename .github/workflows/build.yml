@@ -15,7 +15,7 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '2.10.5'
+          flutter-version: '1.22.6'
           # no working: '3.19.6'
           # '2.5.3'  # Adjust Flutter version as needed
 
