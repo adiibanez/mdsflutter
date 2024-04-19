@@ -11,6 +11,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  protobuf: '^2.1.0'
+  meta: '^1.7.0'
 
   mdsflutter:
     # When depending on this package from a real application you should use:

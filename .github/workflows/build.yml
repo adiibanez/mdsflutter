@@ -20,11 +20,11 @@ jobs:
           #dart-version: '2.12.0'
           # no working: '3.19.6'
           # '2.5.3'  # Adjust Flutter version as needed
-      - name: Set up Dart SDK
-        uses: dart-lang/setup-dart@v1
-        with:
-          sdk: '2.12.0'
-          #sdk: '>=2.14.0 <3.0.0'  # Specify the Dart SDK version here
+      #- name: Set up Dart SDK
+      #  uses: dart-lang/setup-dart@v1
+      #  with:
+      #    sdk: '2.12.0'
+      #    #sdk: '>=2.14.0 <3.0.0'  # Specify the Dart SDK version here
       
       
       #- name: Setup Dart
