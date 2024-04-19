@@ -11,21 +11,23 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v3
-      #- name: Set up Dart SDK
-      #  uses: dart-lang/setup-dart@v1
-      #  with:
-      #    sdk: '2.12.0'
-      #    #sdk: '>=2.14.0 <3.0.0'  # Specify the Dart SDK version here
-
+      
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '1.22.6'
-          dart-version: '2.12.0'
+          #dart-version: '2.12.0'
           # no working: '3.19.6'
           # '2.5.3'  # Adjust Flutter version as needed
-      - name: Setup Dart
-        run: flutter upgrade --dart
+      - name: Set up Dart SDK
+        uses: dart-lang/setup-dart@v1
+        with:
+          sdk: '2.12.0'
+          #sdk: '>=2.14.0 <3.0.0'  # Specify the Dart SDK version here
+      
+      
+      #- name: Setup Dart
+      #  run: flutter upgrade --dart
       
       - name: Check Dart version  
         run: dart --version
