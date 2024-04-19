@@ -26,6 +26,8 @@ jobs:
           # '2.5.3'  # Adjust Flutter version as needed
       - name: Setup Dart
         run: flutter upgrade --dart
+      
+      - name: Check Dart version  
         run: dart --version
 
       - name: Build APK
