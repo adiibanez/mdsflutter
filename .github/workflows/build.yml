@@ -20,6 +20,9 @@ jobs:
           #dart-version: '2.12.0'
           # no working: '3.19.6'
           # '2.5.3'  # Adjust Flutter version as needed
+          
+      - name: Disable google analytics
+        run: flutter config --no-analytics
       
       - name: Check Dart version  
         run: dart --version
