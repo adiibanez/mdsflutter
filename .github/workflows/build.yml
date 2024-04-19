@@ -18,4 +18,4 @@ jobs:
           flutter-version: '2.5.3'  # Adjust Flutter version as needed
 
       - name: Build APK
-        run: flutter build apk
+        run: flutter build apk -t lib/Mds.dart
